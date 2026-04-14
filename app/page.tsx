@@ -1,17 +1,51 @@
+import Image from "next/image";
+import imagem from '../public/foto.jpg'
+
 export default function Home() {
   return (
-    <main>
+    <>
+    <main className="flex items-center justify-around mt-30">
       <div className="max-w-x1 space-y-6">
           <h3 className="text-sm uppercase tracking-[0.2em] text-lime-400 font-mono">DESENVOLVEDOR FULL STACK</h3>
           <h1 className="text-5xl md:text-7xl font-serif leading-tight tracking-tight">Gustavo Rodrigues</h1>
-          <p className="text-zinc-400 text-lg leading-relaxed max-w-md">Construo produtos web do zero — 
+          <p className="text-zinc-800 text-lg leading-relaxed max-w-md text-justify">
+            Construo produtos web do zero — 
             desde a API até a interface. 
             Foco em código limpo, 
-            UX que faz sentido e entregas que não travam.</p>
+            UX que faz sentido e entregas que não travam.
+          </p>
+          <div className="mt-8 flex gap-4">
+      <a href="" 
+      className="
+      px-6 py-3 
+      bg-lime-400 
+      text-black 
+      font-semibold 
+      rounded-lg 
+      hover:bg-lime-300 
+      transition">
+      Falar comigo
+      </a>
+      <a href="" className="px-6 py-3 border border-zinc-700 text-black rounded-lg hover:bg-white transition">Ver projetos</a>
+    </div>
       </div>
       <div>
-        imagem
+        <Image
+        className="rounded-full"
+        src={imagem}
+        alt="foto perfil"
+        width={250}
+        height={250}
+        />
       </div>
+
+      
     </main>
+
+    
+
+   
+    </>
+    
   );
 }
