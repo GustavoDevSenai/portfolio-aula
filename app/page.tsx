@@ -1,5 +1,9 @@
 import Image from "next/image";
 import imagem from '../public/foto.jpg'
+import { projects } from "@/data/project";
+import ProjectCard from "./components/ProjectCard";
+
+
 
 export default function Home() {
   return (
@@ -41,8 +45,26 @@ export default function Home() {
         />
       </div>
 
-      
     </main>
+
+    <section className="max-w-6x1 mx-auto px-6 py-16">
+      
+      <h2 className="text-3xl font-bold mb-10">
+        Projetos
+      </h2>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index)=>(
+            <ProjectCard 
+              key={index}
+              title={project.title}
+              description={project.description}
+              techs={project.techs}
+            />
+          ))}
+      </div>
+
+    </section>
 
     
 
