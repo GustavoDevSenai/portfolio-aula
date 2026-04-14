@@ -26,7 +26,9 @@ export default function Home() {
       transition">
       Falar comigo
       </a>
-      <a href="" className="px-6 py-3 border border-zinc-700 text-black rounded-lg hover:bg-white transition">Ver projetos</a>
+      <a href="" className=
+      "px-6 py-3 border border-zinc-700 text-black rounded-lg hover:bg-white transition">Ver projetos
+      </a>
     </div>
       </div>
       <div>
