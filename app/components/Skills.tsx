@@ -20,7 +20,8 @@ export default function Skills(){
             
             <div className="flex flex-wrap gap-4">
                 {skills.map((skill)=>(
-                    <div key={skill} className="px-4 py-2 bg-zinc-800 rounded-lg border border-white/10 hover:bg-zinc-700 transition">
+                    <div key={skill} className="px-4 py-2 bg-zinc-800 rounded-lg border 
+                    border-white/10 hover:bg-zinc-700 transition">
                         {skill}
                     </div>
                 ))}
