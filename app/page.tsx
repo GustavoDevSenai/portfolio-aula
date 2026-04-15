@@ -3,6 +3,8 @@ import imagem from '../public/foto.jpg'
 import { projects } from "@/data/project";
 import ProjectCard from "./components/ProjectCard";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+
 
 
 
@@ -67,10 +69,16 @@ export default function Home() {
 
     </section>
 
-          
+
+
     <section className="max-w-5x1 ml-25 mx-auto px-6">
           <Skills />
     </section>
+
+    <section className="max-w-5x1 ml-25 mx-auto px-6">
+          <Experience />
+    </section>
+  
     </>
     
   );
