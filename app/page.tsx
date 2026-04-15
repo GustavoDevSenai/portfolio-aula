@@ -2,6 +2,7 @@ import Image from "next/image";
 import imagem from '../public/foto.jpg'
 import { projects } from "@/data/project";
 import ProjectCard from "./components/ProjectCard";
+import Skills from "./components/Skills";
 
 
 
@@ -64,6 +65,10 @@ export default function Home() {
           ))}
       </div>
 
+    </section>
+    
+    <section className="max-w-3x1 mx-auto px-6">
+          <Skills />
     </section>
     </>
     
