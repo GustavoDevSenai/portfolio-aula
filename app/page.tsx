@@ -66,8 +66,9 @@ export default function Home() {
       </div>
 
     </section>
-    
-    <section className="max-w-3x1 mx-auto px-6">
+
+          
+    <section className="max-w-5x1 ml-25 mx-auto px-6">
           <Skills />
     </section>
     </>
