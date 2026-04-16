@@ -16,6 +16,8 @@ export const projects = [
         description:"Software para agendar tarefas",
         techs:["Javascript", "HTML", "css"]
     },
+
+    
     
 
 ]

@@ -13,17 +13,24 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-    <main className="flex items-center justify-around mt-30">
-      <div className="max-w-x1 space-y-6">
+    <main className="flex flex-col-reverse lg:flex-row
+        items-center
+        justify-between
+        gap-12
+        max-w-6xl
+        mx-auto
+        px-6
+        py-20">
+      <div className="space-y-6 text-center lg:text-left">
           <h3 className="text-sm uppercase tracking-[0.2em] text-lime-400 font-mono">DESENVOLVEDOR FULL STACK</h3>
-          <h1 className="text-5xl md:text-7xl font-serif leading-tight tracking-tight">Gustavo Rodrigues</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight tracking-tight">Gustavo Rodrigues</h1>
           <p className="text-zinc-800 text-lg leading-relaxed max-w-md text-justify">
             Construo produtos web do zero — 
             desde a API até a interface. 
             Foco em código limpo, 
             UX que faz sentido e entregas que não travam.
           </p>
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
       <a href="" 
       className="
       px-6 py-3 
@@ -42,7 +49,11 @@ export default function Home() {
       </div>
       <div>
         <Image
-        className="rounded-full"
+        className="rounded-full
+        w-40 h-40
+        md:w-56 md:h-56
+        lg:w-72 lg:h-72
+        object-cover"
         src={imagem}
         alt="foto perfil"
         width={250}
@@ -52,13 +63,13 @@ export default function Home() {
 
     </main>
 
-    <section className="max-w-6x1 mx-auto px-6 py-16">
+    <section className="max-w-6xl mx-auto px-6 py-16">
       
-      <h2 className="text-3xl font-bold mb-10">
+      <h2 className="text-3xl font-bold mb-10" id="projetos">
         Projetos
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index)=>(
             <ProjectCard 
               key={index}
@@ -73,19 +84,19 @@ export default function Home() {
 
 
 
-    <section className="max-w-5x1 ml-25 mx-auto px-6">
+    <section className="max-w-5x1 ml-25 mx-auto px-6" id="skills">
           <Skills />
     </section>
 
-    <section className="max-w-5x1 ml-25 mx-auto px-6">
+    <section className="max-w-5x1 ml-25 mx-auto px-6" id="experience">
           <Experience />
     </section>
 
-    <section>
+    <section id="contact">
           <Contact />
     </section>
 
-     <section>
+     <section id="footer">
           <Footer />
     </section>
   

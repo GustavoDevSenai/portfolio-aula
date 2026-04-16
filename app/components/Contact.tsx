@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        <div className="max-w-5x1 mx-auto px-3 py-20">
+        <div className="max-w-6x1 mx-auto px-30 py-20">
 
 
         <div className=" bg-zinc-200 border border-white/10 rounded-2xl p-10 grid md:grid-cols-2 gap-10 itens-center">
